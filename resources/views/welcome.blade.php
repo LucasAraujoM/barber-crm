@@ -17,7 +17,7 @@
         <!-- Open Graph / Facebook -->
         <meta property="og:title" content="BarberCRM - El mejor CRM para barberos">
         <meta property="og:description" content="BarberCRM es una solución integral para la gestión de barberías, diseñada para optimizar la productividad y mejorar la experiencia del cliente.">
-        <meta property="og:image" content="{{ asset('img/logo.png') }}">
+        <meta property="og:image" content="{{ asset('img/logo-dark.png') }}">
         <meta property="og:url" content="{{ url('/') }}">
         <meta property="og:type" content="website">
 
