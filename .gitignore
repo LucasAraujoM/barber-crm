@@ -5,6 +5,8 @@
 .env.production
 .phpactor.json
 .phpunit.result.cache
+.htaccess
+default1.php
 /.fleet
 /.idea
 /.nova
