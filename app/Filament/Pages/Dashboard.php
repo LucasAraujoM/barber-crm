@@ -2,6 +2,7 @@
 
 namespace App\Filament\Pages;
 
+use App\Filament\Widgets\Calendar;
 use BackedEnum;
 use Filament\Pages\Page;
 use Filament\Support\Icons\Heroicon;
@@ -15,7 +16,7 @@ class Dashboard extends Page
     protected function getHeaderWidgets(): array
     {
         return [
-            
+            Calendar::class
         ];
     }
 }
