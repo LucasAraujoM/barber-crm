@@ -42,12 +42,6 @@ return [
             'synchronous' => null,
             'transaction_mode' => 'DEFERRED',
         ],
-        "libsql" => [
-            "driver" => "libsql",
-            "url" => env("TURSO_DATABASE_URL"),
-            "password" => env("TURSO_AUTH_TOKEN"),
-            'prefix' => '',
-        ],
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DB_URL'),
