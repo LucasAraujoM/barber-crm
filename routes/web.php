@@ -12,3 +12,7 @@ Route::get('/logout', function () {
     }
     return redirect()->route('home');
 });
+
+Route::post('/contact', function () {
+    return redirect()->route('home');
+})->name('contact');

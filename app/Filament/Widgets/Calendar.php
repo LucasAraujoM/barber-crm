@@ -25,7 +25,12 @@ class Calendar extends CalendarWidget
         $events = CalendarEvent::make()
             ->title('No hay turnos disponibles')
             ->start($info->start)
-            ->end($info->end);
+            ->end($info->end)
+            ->styles([
+                    'color: red' => true,            // Applies the style if the condition (true) is met
+                    'background-color' => '#ffff00', // Directly applies the background color
+                    'font-size: 12px'        
+            ]);
         return [
             $events,
         ];

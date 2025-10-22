@@ -33,6 +33,6 @@ class Turns extends Model implements Eventable
         return CalendarEvent::make($this)
             ->title($this->staff->name . ' - ' . $this->customer->name)
             ->start($this->date . ' ' . $this->time)
-            ->end($this->date . ' ' . $this->time->addHour(1));
+            ->end($this->date . ' ' . $this->time);
     }
 }
