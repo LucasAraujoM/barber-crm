@@ -126,7 +126,7 @@
 
                 <!-- Demo Features Grid -->
                 <div class="grid md:grid-cols-3 gap-8 mt-16">
-                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700">
+                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-cyan-600 transition-all hover:transform hover:scale-105">
                         <div class="w-14 h-14 bg-cyan-600/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                             <svg class="w-7 h-7 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
@@ -138,7 +138,7 @@
                         </p>
                     </div>
 
-                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700">
+                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-cyan-600 transition-all hover:transform hover:scale-105">
                         <div class="w-14 h-14 bg-cyan-600/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                             <svg class="w-7 h-7 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
@@ -150,7 +150,7 @@
                         </p>
                     </div>
 
-                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700">
+                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-cyan-600 transition-all hover:transform hover:scale-105">
                         <div class="w-14 h-14 bg-cyan-600/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                             <svg class="w-7 h-7 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
@@ -181,7 +181,7 @@
         </div>
 
         <!-- Features Section -->
-        <section id="features" class="py-20 px-6 h-screen">
+        <section id="features" class="py-20 px-6 min-h-screen">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-bold mb-4">Todo lo que necesitas para tu barbería</h2>
@@ -284,7 +284,7 @@
         </section>
 
         <!-- Pricing Section -->
-         <section class="py-20 px-6 bg-slate-800 h-screen" id="pricing">
+         <section class="py-20 px-6 bg-slate-800 min-h-screen" id="pricing">
             <div class="max-w-7xl mx-auto text-center">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">Plan de Precios</h2>
                 <p class="text-xl mb-8 text-slate-400">
@@ -424,7 +424,7 @@
 
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 px-6 bg-slate-800/50 h-screen">
+        <section id="contact" class="py-20 px-6 bg-slate-800/50 min-h-screen">
             <div class="max-w-5xl mx-auto text-center">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">¿Tienes preguntas?</h2>
                 <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
