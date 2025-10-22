@@ -14,10 +14,17 @@ class Staff extends Model
         'email',
         'phone',
         'address',
+        'avatar',
+        'document_number',
     ];
 
     public function turns()
     {
         return $this->hasMany(Turns::class);
+    }
+
+    public function skills()
+    {
+        return $this->belongsToMany(Skill::class, 'staff_skill', 'staff_id', 'skill_id');
     }
 }

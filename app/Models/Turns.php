@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use Guava\Calendar\Contracts\Eventable;
+use Guava\Calendar\ValueObjects\CalendarEvent;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Turns extends Model
+class Turns extends Model implements Eventable
 {
     use SoftDeletes;
 
@@ -25,5 +27,12 @@ class Turns extends Model
     public function staff()
     {
         return $this->belongsTo(Staff::class);
+    }
+    public function toCalendarEvent(): CalendarEvent
+    {
+        return CalendarEvent::make($this)
+            ->title($this->staff->name . ' - ' . $this->customer->name)
+            ->start($this->date . ' ' . $this->time)
+            ->end($this->date . ' ' . $this->time->addHour(1));
     }
 }
