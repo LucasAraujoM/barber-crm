@@ -30,7 +30,7 @@ class DashboardPanelProvider extends PanelProvider
             ->topNavigation(true)
             ->path('')
             ->login()
-            ->registration()
+            //->registration()
             ->colors([
                 'primary' => Color::Sky,
                 'danger' => Color::Red,
