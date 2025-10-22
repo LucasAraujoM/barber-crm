@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+
         <meta name="referrer" content="no-referrer-when-downgrade">
         <meta http-equiv="Cache-Control" content="no-cache">
         <meta name="description" content="BarberCRM es una solución integral para la gestión de barberías, diseñada para optimizar la productividad y mejorar la experiencia del cliente.">
