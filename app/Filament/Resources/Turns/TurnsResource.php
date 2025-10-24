@@ -21,6 +21,9 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class TurnsResource extends Resource
 {
     protected static ?string $model = Turns::class;
+    protected static ?string $modelLabel = 'Turno';
+    protected static ?string $pluralModelLabel = 'Turnos';
+
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::QueueList;
 
@@ -50,9 +53,8 @@ class TurnsResource extends Resource
     {
         return [
             'index' => ListTurns::route('/'),
-            'create' => CreateTurns::route('/create'),
-            'view' => ViewTurns::route('/{record}'),
-            'edit' => EditTurns::route('/{record}/edit'),
+            'crear' => CreateTurns::route('/create'),
+            'editar' => EditTurns::route('/{record}/edit'),
         ];
     }
 

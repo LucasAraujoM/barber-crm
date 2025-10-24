@@ -16,7 +16,7 @@ class Dashboard extends Page
     protected function getHeaderWidgets(): array
     {
         return [
-            Calendar::class
+            /* Calendar::class */
         ];
     }
 }

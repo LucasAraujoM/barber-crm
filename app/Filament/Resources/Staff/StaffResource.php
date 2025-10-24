@@ -19,7 +19,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class StaffResource extends Resource
 {
     protected static ?string $model = Staff::class;
-
+    protected static ?string $modelLabel = 'Personal';
+    protected static ?string $pluralModelLabel = 'Personal';
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Scissors;
 
     public static function form(Schema $schema): Schema
@@ -43,8 +44,8 @@ class StaffResource extends Resource
     {
         return [
             'index' => ListStaff::route('/'),
-            'create' => CreateStaff::route('/create'),
-            'edit' => EditStaff::route('/{record}/edit'),
+            'crear' => CreateStaff::route('/create'),
+            'editar' => EditStaff::route('/{record}/edit'),
         ];
     }
 

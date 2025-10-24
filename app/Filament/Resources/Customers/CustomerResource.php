@@ -19,7 +19,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class CustomerResource extends Resource
 {
     protected static ?string $model = Customer::class;
-
+    protected static ?string $modelLabel = 'cliente';
+    protected static ?string $description = 'Gestiona los clientes de la empresa';
     protected static string|BackedEnum|null $navigationIcon = Heroicon::UserGroup;
 
     public static function form(Schema $schema): Schema
@@ -43,8 +44,8 @@ class CustomerResource extends Resource
     {
         return [
             'index' => ListCustomers::route('/'),
-            'create' => CreateCustomer::route('/create'),
-            'edit' => EditCustomer::route('/{record}/edit'),
+            'crear' => CreateCustomer::route('/create'),
+            'editar' => EditCustomer::route('/{record}/edit'),
         ];
     }
 
